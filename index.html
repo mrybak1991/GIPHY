@@ -5,26 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Sports Teams</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+    <br>
+    
     <div class ="container">
     
     <div id="buttons-drop"></div>
-    
+    <br>
+    <div class="row">
+    <div class="col-lg-8">
+    <div id ="sports-view"></div>
+    </div>
+    <div class="col-lg-4">
     <form id="sports-form">
         <label for="sports-input"> Add Your Favorite Sports Team!</label>
         <input type="text" id="sports-input">
         <br>
-        
+        <br>
         <input id="add-sport" type="submit" value="Add Your Team!">
     </form>
+    </div>
+    </div>
 
-    <div id ="sports-view"></div>
+    
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript">
 
-    var teams = ["The Devils", "The Jets", "The Yankees", "The Sixers"];
+    var teams = ["The New Jersey Devils", "The Philadelphia Phillies", "The New York Yankees", "The Philadelphia Sixers"];
 
     function displaySportsGifs() {
 
